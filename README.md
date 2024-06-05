@@ -1,7 +1,8 @@
 # Todo API
 
 ## Installation
-- run `composer i`
+- Rename file .env.example to .env
+- Run `composer i`
 - Create database `todo-api`
 - Run `php artisan migrate:fresh --seed`
 - Run `php artisan l5-swagger:generate`
