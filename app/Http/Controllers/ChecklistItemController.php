@@ -301,9 +301,9 @@ class ChecklistItemController extends Controller
      *      )
      * )
      */
-    public function update(RenameChecklistItemAPIRequest $request, $id)
+    public function update(RenameChecklistItemAPIRequest $request, $id, $itemId)
     {
-        $checklist = ChecklistItem::where('id', $id)->first();
+        $checklist = ChecklistItem::where('id', $itemId)->first();
         
         if (!$checklist) {
             return response()->json([
